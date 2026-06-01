@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Fadil - Dunia Minecraft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        minegrass: '#5C9E39',
+                        minestone: '#8B8B8B',
+                        minewood: '#966F33',
+                        minedark: '#2D2D2D',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-pattern {
+                background-image: url('https://assets.stickpng.com/images/580b585b2edb553d21c5c482.png');
+                background-size: 64px;
+                background-repeat: repeat;
+            }
+            .text-shadow {
+                text-shadow: 2px 2px 0 rgba(0,0,0,0.8);
+            }
+            .pixel-border {
+                box-shadow: 
+                    0 0 0 4px #2D2D2D,
+                    0 0 0 8px #8B8B8B;
+            }
+        }
+    </style>
+</head>
+<body class="bg-pattern min-h-screen font-sans text-white">
+    <!-- Lapisan gelap agar tulisan terbaca jelas -->
+    <div class="bg-black/60 min-h-screen">
+
+        <!-- Bagian Kepala -->
+        <header class="py-10 px-4 text-center">
+            <h1 class="text-[clamp(2.5rem,8vw,5rem)] font-bold text-minegrass text-shadow tracking-wider">
+                HALO, SAYA FADIL!
+            </h1>
+            <p class="text-[clamp(1.2rem,4vw,2rem)] font-medium text-white/90 mt-2">
+                Umur 16 Tahun • Sedang Belajar Coding 💻
+            </p>
+        </header>
+
+        <!-- Konten Utama -->
+        <main class="max-w-4xl mx-auto px-4 pb-16">
+            
+            <!-- Kartu Perkenalan -->
+            <section class="bg-minestone/90 p-6 rounded-lg pixel-border mb-10">
+                <h2 class="text-2xl font-bold text-yellow-300 mb-4 border-b-2 border-yellow-300 pb-2">
+                    Tentang Saya
+                </h2>
+                <p class="text-lg leading-relaxed">
+                    Hai semuanya! Nama gw <span class="font-bold text-white">Fadil</span>, saya berusia 16 tahun. Saat ini saya sedang serius belajar dunia pemrograman atau coding, karena saya ingin bisa membuat berbagai hal menarik sendiri, seperti situs web ini! 🚀
+                </p>
+                <p class="text-lg leading-relaxed mt-3">
+                    Saya sangat menyukai permainan Minecraft, itulah sebabnya saya membuat halaman ini dengan nuansa dunia Minecraft yang penuh petualangan dan balok-balok seru. Di sini kamu bisa bertemu dengan beberapa penghuni dunia Minecraft yang saya sukai!
+                </p>
+            </section>
+
+            <!-- Daftar Makhluk Minecraft -->
+            <section>
+                <h2 class="text-[clamp(1.5rem,5vw,2.5rem)] font-bold text-minegrass text-center text-shadow mb-8">
+                    Penghuni Dunia Minecraft 🎮
+                </h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Makhluk 1: Zombi -->
+                    <div class="bg-minedark/90 p-5 rounded-lg pixel-border text-center hover:scale-105 transition-transform duration-300">
+                        <div class="text-6xl mb-3">🧟</div>
+                        <h3 class="text-xl font-bold text-green-400 mb-2">Zombi</h3>
+                        <p class="text-gray-200">Makhluk yang sering muncul di malam hari, tapi tidak apa-apa, kita tetap berteman ya! 😆</p>
+                    </div>
+
+                    <!-- Makhluk 2: Kelelawar -->
+                    <div class="bg-minedark/90 p-5 rounded-lg pixel-border text-center hover:scale-105 transition-transform duration-300">
+                        <div class="text-6xl mb-3">🦇</div>
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Kelelawar</h3>
+                        <p class="text-gray-200">Biasanya tinggal di dalam gua yang gelap, terbang kesana kemari dengan tenang.</p>
+                    </div>
+
+                    <!-- Makhluk 3: Penduduk Desa / Villager -->
+                    <div class="bg-minedark/90 p-5 rounded-lg pixel-border text-center hover:scale-105 transition-transform duration-300">
+                        <div class="text-6xl mb-3">👨🌾</div>
+                        <h3 class="text-xl font-bold text-emerald-300 mb-2">Penduduk Desa</h3>
+                        <p class="text-gray-200">Warga desa yang ramah, suka berdagang dan tinggal bersama di perkampungan Minecraft.</p>
+                    </div>
+
+                    <!-- Makhluk 4: Rangka / Stave -->
+                    <div class="bg-minedark/90 p-5 rounded-lg pixel-border text-center hover:scale-105 transition-transform duration-300">
+                        <div class="text-6xl mb-3">💀</div>
+                        <h3 class="text-xl font-bold text-gray-300 mb-2">Rangka Tulang</h3>
+                        <p class="text-gray-200">Makhluk bertulang yang pandai memanah, hati-hati kalau bertemu dia di tempat gelap!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pesan Penutup -->
+            <section class="mt-12 bg-minewood/90 p-6 rounded-lg pixel-border text-center">
+                <h2 class="text-2xl font-bold text-yellow-100 mb-4">Pesan Dari Saya</h2>
+                <p class="text-lg">
+                    Belajar coding itu seru, seperti membangun dunia di Minecraft tapi menggunakan tulisan dan kode! Saya akan terus belajar agar bisa membuat situs web yang lebih keren lagi nanti. Terima kasih sudah berkunjung ke halaman saya! 😊
+                </p>
+            </section>
+
+        </main>
+
+        <!-- Bagian Kaki -->
+        <footer class="bg-minedark/90 py-6 text-center text-gray-400 text-sm">
+            <p>Dibuat dengan ❤️ oleh Fadil • 2026 | Tema: Dunia Minecraft</p>
+        </footer>
+
+    </div>
+</body>
+</html>
