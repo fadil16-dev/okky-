@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OKKY - Robot Futuristik</title>
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#050b18,#102b46,#07131f);
+color:white;
+overflow-x:hidden;
+}
+header{
+text-align:center;
+padding:40px 20px;
+border-bottom:1px solid #00e5ff55;
+box-shadow:0 0 25px #00e5ff33;
+}
+h1{
+font-size:56px;
+color:#00e5ff;
+text-shadow:0 0 15px #00e5ff;
+}
+.robot{
+font-size:140px;
+text-align:center;
+animation:float 3s ease-in-out infinite;
+filter:drop-shadow(0 0 20px #00e5ff);
+}
+@keyframes float{
+50%{transform:translateY(-15px);}
+}
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+.card{
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(8px);
+border:1px solid #00e5ff44;
+border-radius:18px;
+padding:20px;
+margin:20px 0;
+box-shadow:0 0 18px rgba(0,229,255,.2);
+}
+.card:hover{
+transform:scale(1.02);
+transition:.3s;
+}
+h2{color:#00e5ff}
+.btn{
+display:block;
+margin:20px auto;
+padding:12px 24px;
+border:none;
+border-radius:30px;
+background:#00e5ff;
+cursor:pointer;
+font-weight:bold;
+}
+footer{
+text-align:center;
+padding:20px;
+opacity:.8;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>🤖 OKKY</h1>
+<p>Robot Edukasi Futuristik SD • SMP • SMA</p>
+</header>
+
+<div class="robot">🤖</div>
+
+<button class="btn" onclick="robot()">Aktifkan Robot OKKY</button>
+
+<div class="container">
+<div class="card">
+<h2>SD</h2>
+<p>Matematika: 25 + 17 = ?</p>
+<p>Bahasa Indonesia: Lawan kata "besar"?</p>
+<p>Bahasa Inggris: Terjemahkan "kucing".</p>
+</div>
+
+<div class="card">
+<h2>SMP</h2>
+<p>Matematika: 3x + 5 = 20</p>
+<p>Bahasa Indonesia: Unsur-unsur teks berita?</p>
+<p>Bahasa Inggris: Ubah ke Simple Past: I go to school.</p>
+</div>
+
+<div class="card">
+<h2>SMA</h2>
+<p>Matematika: x² - 5x + 6 = 0</p>
+<p>Bahasa Indonesia: Apa itu teks argumentasi?</p>
+<p>Bahasa Inggris: Buat kalimat Present Perfect.</p>
+</div>
+</div>
+
+<footer>© OKKY Robot Edukasi Futuristik</footer>
+
+<script>
+function robot(){
+alert("Halo! Saya Robot OKKY 🤖 Siap membantu belajar.");
+}
+</script>
+</body>
+</html>
